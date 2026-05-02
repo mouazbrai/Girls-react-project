@@ -1,0 +1,40 @@
+src/
+│
+├─ app/                 # أساس التطبيق
+│   ├─ App.jsx
+│   └─ router.jsx
+│
+├─ features/            # الصفحات + منطقها
+│   ├─ home/
+│   │   ├─ Home.jsx
+│   │   └─ components/   # أي كومبوننت خاص بالهوم فقط
+│   │
+│   └─ blog/
+│       ├─ Blog.jsx
+│       ├─ data.js       # مؤقت بدل API
+│       └─ components/   # كومبوننتات البلوغ فقط
+│
+├─ components/          # كومبوننتات عامة Shared
+│   ├─ ui/
+│   │   ├─ Button/
+│   │   ├─ Card/
+│   │   └─ Input/
+│   │
+│   └─ layout/
+│       ├─ Header/
+│       └─ Footer/
+│
+├─ hooks/               # Hooks عامة
+│   └─ useScroll.js
+│
+├─ styles/              # ستايلات عامة
+│   └─ globals.css
+│
+├─ assets/              # صور / أيقونات / خطوط
+│   ├─ images/
+│   └─ icons/
+│
+├─ utils/               # helpers & constants
+│   └─ constants.js
+│
+└─ main.jsx             # نقطة البداية للتطبيق

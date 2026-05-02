@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(",./assets/fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Italic.woff2") format("woff2");
+  font-weight: 400; 
+  font-style: italic;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*General Style*/
+.pages_button{
+  @apply py-4 px-7 bg-primary rounded-25 text-sm md:text-base lg:text-xl xl:text-2xl text-white;
+}
+/*Navbar Style*/
+.nav-bar {
+    @apply  -top-full fixed md:relative md:top-0 w-full bg-white flex items-center justify-center md:justify-between py-3 px-0 md:px-10 flex-wrap transition-all duration-300 ease-in-out z-10;
+}
+.logo-img{
+    @apply w-32;
+}
+.nav-menu {
+    @apply flex  gap-2 md:gap-5 w-full flex-col md:w-fit md:flex-row mt-4 md:m-0;
+}
+.nav-item{
+    @apply text-center px-4 py-2 cursor-pointer rounded-none md:rounded-25 hover:bg-primary-light transition-colors;
+}
+.nav-link {
+    @apply text-xl group-hover:text-white transition-colors;
+}
+.nav-icon{
+  @apply absolute top-2 right-4 h-12 w-12 cursor-pointer md:hidden z-20;
+}
+.menu-show-hide{
+  @apply top-0;
+}
+/*End Navbar Style*/
+/*Main Layout Style*/
+.main-content{
+    @apply py-5 px-7 lg:w-4/5 m-auto  flex items-center flex-wrap md:flex-nowrap;
+}
+.home-title{
+  @apply mb-4 text-primary uppercase w-fit text-2xl md:text-4xl lg:text-5xl xl:text-6xl;
+}
+.home-caption{
+  @apply text-accent text-lg;
+}
+.home-paragraph{
+  @apply my-5 text-base md:text-lg lg:text-xl xl:text-2xl;
+}
+.home-img-section{
+  @apply  w-full h-full ;
+}
+.home-reseltion{
+  @apply w-full h-full;
+}
+.about-image{
+  @apply w-full h-full flex justify-center items-center;
+}
+.about-title{
+  @apply text-xl md:text-2xl lg:text-3xl text-accent ;
+}
+.company-name{
+  @apply text-primary;
+}
+.about-desc{
+  @apply text-xs md:text-base lg:text-lg leading-6 mt-4;
+}
+.contact{
+  @apply flex justify-evenly w-full flex-wrap py-10;
+}
+.contact-card{
+  @apply  w-full md:w-1/3 py-8 px-4 text-center md:text-left;
+}
+.card-head {
+  @apply text-center mb-8;
+}
+.head-icon {
+  @apply h-20 w-20 m-auto text-primary;
+}
+.head-title{
+  @apply mt-4 text-xl;
+}
+.card-info{
+  @apply  mb-4;
+}
+.info-icon{
+  @apply h-6 w-6 text-accent text-sm inline-block mr-3;
+}
+.card-text{
+  @apply text-sm;
+}
+.contact-mail{
+  @apply relative  w-full;
+}
+.contact-input{
+  @apply w-full h-full py-2 outline-none pl-2 bg-secondary  rounded-sm;
+}
+.contact-label{
+  @apply absolute left-2 top-2/4 -translate-y-2/4 peer-focus:top-0 transition-all duration-500 text-base text-zinc-400;
+}
+.social-info{
+  @apply w-full flex justify-center gap-6;
+}
+.social-icon{
+  @apply h-6 w-6 cursor-pointer text-accent;
+}
+.review-cards{
+  @apply flex flex-wrap w-full gap-6 justify-center ;
+}
+.commant-card{
+  @apply shadow-lg py-4 rounded-xl w-full h-full flex flex-col bg-white; 
+}
+.commant-head{
+  @apply relative border-b  flex items-center gap-5  mb-5 p-4;
+}
+.commant-platform{
+  @apply absolute top-2 right-2;
+}
+.platform-icon{
+  @apply text-blue-600 h-6 w-6;
+}
+.commant-img{
+  @apply h-20 w-20 rounded-full;
+}
+.commant-body{
+  @apply p-2;
+}
+/*End Main Layout Style*/
